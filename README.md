@@ -1,1 +1,105 @@
+# Java Wildlife Scenario - OOP Assignment
+
+## About the Project
+
+This project is a Java program created as part of an Object-Oriented Programming (OOP) assignment.
+
+The program demonstrates multilevel inheritance, interfaces, constructors, and custom exception handling using a wildlife scenario.
+
+## OOP Concepts Used
+
+* Classes and Objects
+* Constructors
+* Multilevel Inheritance
+* Interfaces
+* Method Implementation
+* Custom Exceptions
+* Exception Handling
+
+## Class Structure
+
+```text
+Animal
+   |
+   v
+Bird
+   |
+   v
+Parrot
+```
+
+The `Parrot` class also implements the `Flyable` interface.
+
+```text
+Flyable
+   ^
+   |
+Parrot
+```
+
+## Classes
+
+### Animal
+
+The `Animal` class contains:
+
+* Species name
+* Sound
+* Constructor
+* `animalMethod()`
+
+### Bird
+
+The `Bird` class inherits from `Animal` and contains:
+
+* `birdMethod()`
+
+### Parrot
+
+The `Parrot` class inherits from `Bird` and implements the `Flyable` interface.
+
+It contains:
+
+* `parrotMethod()`
+* `fly()`
+
+### Flyable
+
+`Flyable` is an interface containing the `fly()` method.
+
+### InvalidSpeciesException
+
+A custom exception created to handle an empty species name.
+
+## Exception Handling
+
+The program checks whether the species name is empty.
+
+If an empty name is provided, the custom `InvalidSpeciesException` is thrown and handled using a `try-catch` block.
+
+## Sample Output
+
+```text
+----- Wildlife Scenario -----
+Animal: Parrot
+Sound: Squawk
+Bird: Birds have feathers and wings.
+Parrot: Parrots can imitate human speech.
+Parrot: The parrot is flying.
+
+----- Exception Demonstration -----
+Exception: Species name cannot be empty.
+```
+
+## Technologies Used
+
+* Java
+* Object-Oriented Programming
+* IntelliJ IDEA
+* Git
+* GitHub
+
+## Author
+
+Dhanush
 

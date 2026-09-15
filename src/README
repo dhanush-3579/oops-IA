@@ -4,7 +4,7 @@
 
 This project is a Java program created as part of an Object-Oriented Programming (OOP) assignment.
 
-The program demonstrates **multilevel inheritance, interfaces, constructors, and custom exception handling** using a wildlife scenario.
+The program demonstrates multilevel inheritance, interfaces, constructors, and custom exception handling using a wildlife scenario.
 
 ## OOP Concepts Used
 
@@ -18,13 +18,13 @@ The program demonstrates **multilevel inheritance, interfaces, constructors, and
 
 ## Class Structure
 
-The inheritance structure used in this program is:
-
 ```text
 Animal
-   ↓
+   |
+   v
 Bird
-   ↓
+   |
+   v
 Parrot
 ```
 
@@ -32,7 +32,8 @@ The `Parrot` class also implements the `Flyable` interface.
 
 ```text
 Flyable
-   ↑
+   ^
+   |
 Parrot
 ```
 
@@ -95,7 +96,8 @@ Exception: Species name cannot be empty.
 * Java
 * Object-Oriented Programming
 * IntelliJ IDEA
-* Git & GitHub
+* Git
+* GitHub
 
 ## Author
 
